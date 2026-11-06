@@ -4,9 +4,10 @@
 #
 
 app = 'kuramanime-scraper'
-primary_region = 'nrt'
+primary_region = 'sin'
 
 [build]
+
 [http_service]
   internal_port = 8080
   force_https = true
@@ -20,3 +21,4 @@ primary_region = 'nrt'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 1024
+  
