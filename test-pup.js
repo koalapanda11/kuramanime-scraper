@@ -1,8 +1,4 @@
-Object.defineProperty(process, 'platform', {
-  value: 'linux'
-});
-
-const puppeteer = require('puppeteer');
+import puppeteer from 'puppeteer';
 
 /**
  * Fungsi modular untuk melakukan scraping Kuramanime secara on-demand
@@ -13,7 +9,6 @@ async function getKuramanimeData(targetUrl = 'https://v20.kuramanime.ing/') {
 
   const browser = await puppeteer.launch({
     headless: true,
-    executablePath: '/data/data/com.termux/files/usr/bin/chromium-browser',
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
@@ -67,7 +62,7 @@ async function getKuramanimeData(targetUrl = 'https://v20.kuramanime.ing/') {
   }
 }
 
-// Fungsi utama untuk pengujian langsung di terminal
+// Fungsi utama untuk pengujian langsung
 async function runTest() {
   const result = await getKuramanimeData();
   console.log('\nHasil Akhir JSON:');
