@@ -1,0 +1,19 @@
+{
+  "name": "kucinglucu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "playwright": "^1.65.0",
+    "puppeteer": "^25.16.0",
+    "puppeteer-core": "^25.16.0"
+  },
+  "allowScripts": {
+    "puppeteer@25.16.0": true
+  }
+}
